@@ -1,4 +1,5 @@
 import { CheckCircle, Users, Award, Clock, Shield } from "lucide-react";
+import { TeamIllustration, QualityIllustration } from "@/components/illustrations";
 
 export default function About() {
   const features = [
@@ -57,12 +58,10 @@ export default function About() {
               </p>
             </div>
             
-            <div className="relative">
-              <img 
-                src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
-                alt="Ethiopian construction site" 
-                className="rounded-xl shadow-xl w-full h-auto"
-              />
+            <div className="relative animate-fade-in-up delay-400">
+              <div className="bg-gradient-to-br from-[var(--ethiopia-beige)] to-white p-8 rounded-xl shadow-xl">
+                <TeamIllustration />
+              </div>
             </div>
           </div>
         </div>
@@ -78,8 +77,8 @@ export default function About() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {features.map((feature, index) => (
-              <div key={index} className="text-center">
-                <div className="bg-[var(--ethiopia-brown)] text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div key={index} className="text-center animate-fade-in-up hover-lift" style={{animationDelay: `${index * 0.1}s`}}>
+                <div className="bg-[var(--ethiopia-brown)] text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 hover-scale">
                   {feature.icon}
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-2">{feature.title}</h3>

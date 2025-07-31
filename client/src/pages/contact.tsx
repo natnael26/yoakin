@@ -11,6 +11,7 @@ import { useToast } from "@/hooks/use-toast";
 import { insertContactFormSchema } from "@shared/schema";
 import { apiRequest } from "@/lib/queryClient";
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
+import { LoadingDots } from "@/components/loading-spinner";
 import { z } from "zod";
 
 const contactFormSchema = insertContactFormSchema.extend({
@@ -146,7 +147,7 @@ export default function Contact() {
             </div>
 
             {/* Contact Form */}
-            <div className="bg-gray-50 rounded-xl p-8">
+            <div className="bg-gray-50 rounded-xl p-8 animate-fade-in-up delay-200">
               <h3 className="text-2xl font-bold text-gray-900 mb-6">Send Us a Message</h3>
               
               <Form {...form}>
@@ -254,10 +255,17 @@ export default function Contact() {
 
                   <Button 
                     type="submit" 
-                    className="w-full bg-[var(--ethiopia-brown)] hover:bg-[var(--ethiopia-chocolate)] text-white py-3 font-semibold"
+                    className="w-full bg-[var(--ethiopia-brown)] hover:bg-[var(--ethiopia-chocolate)] text-white py-3 font-semibold hover-lift"
                     disabled={submitContactForm.isPending}
                   >
-                    {submitContactForm.isPending ? "Sending..." : "Send Message"}
+                    {submitContactForm.isPending ? (
+                      <div className="flex items-center justify-center space-x-2">
+                        <span>Sending</span>
+                        <LoadingDots />
+                      </div>
+                    ) : (
+                      "Send Message"
+                    )}
                   </Button>
                 </form>
               </Form>

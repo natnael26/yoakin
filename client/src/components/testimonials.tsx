@@ -12,8 +12,8 @@ export function Testimonials() {
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {TESTIMONIALS.map((testimonial) => (
-            <div key={testimonial.id} className="bg-white rounded-xl shadow-lg p-8 relative">
+          {TESTIMONIALS.map((testimonial, index) => (
+            <div key={testimonial.id} className="bg-white rounded-xl shadow-lg p-8 relative animate-fade-in-up hover-lift" style={{animationDelay: `${index * 0.2}s`}}>
               <div className="text-[var(--ethiopia-gold)] text-4xl mb-4">
                 <i className="fas fa-quote-left"></i>
               </div>

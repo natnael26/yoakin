@@ -48,8 +48,8 @@ export function PortfolioGrid({ filter }: { filter: string }) {
 
   return (
     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-      {filteredItems.map((item) => (
-        <div key={item.id} className="portfolio-item group cursor-pointer">
+      {filteredItems.map((item, index) => (
+        <div key={item.id} className="portfolio-item group cursor-pointer animate-fade-in-up hover-lift" style={{animationDelay: `${index * 0.1}s`}}>
           <div className="relative overflow-hidden rounded-xl shadow-lg">
             <img 
               src={item.image} 

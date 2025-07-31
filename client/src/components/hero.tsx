@@ -22,14 +22,14 @@ export function Hero() {
         <div className="absolute inset-0 bg-black bg-opacity-50" />
       </div>
       
-      <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4">
-        <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-          Building <span className="text-[var(--ethiopia-gold)]">Ethiopia's</span> Future
+      <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4 animate-fade-in-up">
+        <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight animate-slide-up">
+          Building <span className="text-[var(--ethiopia-gold)] animate-pulse">Ethiopia's</span> Future
         </h1>
-        <p className="text-xl md:text-2xl mb-8 font-light">
+        <p className="text-xl md:text-2xl mb-8 font-light animate-fade-in-up delay-200">
           Premier construction services with 20+ years of excellence in residential, commercial, and infrastructure projects across Ethiopia
         </p>
-        <div className="space-x-4">
+        <div className="space-x-4 animate-fade-in-up delay-400">
           <Link href="/portfolio">
             <Button 
               size="lg"

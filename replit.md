@@ -2,6 +2,13 @@
 
 This is a construction company website for Habesha Construction, built with a modern full-stack architecture. The application features a React frontend with shadcn/ui components and an Express.js backend with PostgreSQL database integration. The site showcases the company's services, portfolio, and includes a contact form system for lead generation.
 
+## Recent Updates (January 2025)
+- Added custom SVG illustrations for construction themes
+- Implemented smooth animations and transitions throughout the site
+- Created animated counters for statistics display
+- Added hover effects and loading animations
+- Enhanced visual appeal with Ethiopian-themed illustrations
+
 # User Preferences
 
 Preferred communication style: Simple, everyday language.

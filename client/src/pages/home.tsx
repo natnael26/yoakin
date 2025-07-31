@@ -4,6 +4,7 @@ import { Testimonials } from "@/components/testimonials";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 import { CheckCircle } from "lucide-react";
+import { ConstructionIllustration, QualityIllustration } from "@/components/illustrations";
 
 export default function Home() {
   return (
@@ -15,7 +16,7 @@ export default function Home() {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
+            <div className="animate-fade-in-up">
               <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
                 About <span className="text-[var(--ethiopia-brown)]">Habesha Construction</span>
               </h2>
@@ -47,15 +48,13 @@ export default function Home() {
               </Link>
             </div>
             
-            <div className="relative">
-              <img 
-                src="https://images.unsplash.com/photo-1577962917302-cd874c4e31d2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
-                alt="Construction team working on project" 
-                className="rounded-xl shadow-xl w-full h-auto"
-              />
+            <div className="relative animate-fade-in-up delay-400">
+              <div className="bg-gradient-to-br from-[var(--ethiopia-beige)] to-white p-8 rounded-xl shadow-xl">
+                <ConstructionIllustration />
+              </div>
               
-              <div className="absolute -bottom-6 -right-6 w-24 h-24 bg-[var(--ethiopia-gold)] rounded-full opacity-20"></div>
-              <div className="absolute -top-6 -left-6 w-16 h-16 bg-[var(--ethiopia-chocolate)] rounded-full opacity-30"></div>
+              <div className="absolute -bottom-6 -right-6 w-24 h-24 bg-[var(--ethiopia-gold)] rounded-full opacity-20 animate-pulse"></div>
+              <div className="absolute -top-6 -left-6 w-16 h-16 bg-[var(--ethiopia-chocolate)] rounded-full opacity-30 animate-pulse delay-200"></div>
             </div>
           </div>
         </div>

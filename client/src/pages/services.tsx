@@ -1,6 +1,7 @@
 import { SERVICES } from "@/lib/constants";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
+import { ServicesIllustration, ProcessIllustration } from "@/components/illustrations";
 
 export default function Services() {
   return (
@@ -23,10 +24,11 @@ export default function Services() {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {SERVICES.map((service) => (
+            {SERVICES.map((service, index) => (
               <div 
                 key={service.id} 
-                className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition duration-300 transform hover:-translate-y-2"
+                className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition duration-300 transform hover:-translate-y-2 animate-fade-in-up hover-lift"
+                style={{animationDelay: `${index * 0.1}s`}}
               >
                 <img 
                   src={service.image} 
@@ -62,6 +64,12 @@ export default function Services() {
             <p className="text-xl text-gray-600">How we bring your construction vision to life</p>
           </div>
 
+          <div className="mb-12 flex justify-center">
+            <div className="bg-gradient-to-br from-[var(--ethiopia-beige)] to-white p-8 rounded-xl shadow-lg">
+              <ProcessIllustration />
+            </div>
+          </div>
+          
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
               {
@@ -85,8 +93,8 @@ export default function Services() {
                 description: "Final inspection and handover of your completed project"
               }
             ].map((process, index) => (
-              <div key={index} className="text-center">
-                <div className="bg-[var(--ethiopia-brown)] text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
+              <div key={index} className="text-center animate-fade-in-up hover-lift" style={{animationDelay: `${index * 0.2}s`}}>
+                <div className="bg-[var(--ethiopia-brown)] text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold hover-scale">
                   {process.step}
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-2">{process.title}</h3>
