@@ -1,5 +1,6 @@
 import { CheckCircle, Users, Award, Clock, Shield } from "lucide-react";
 import { TeamIllustration, QualityIllustration } from "@/components/illustrations";
+import { TeamSection } from "@/components/team-section";
 
 export default function About() {
   const features = [
@@ -152,6 +153,9 @@ export default function About() {
           </div>
         </div>
       </section>
+
+      {/* Team Section */}
+      <TeamSection />
     </div>
   );
 }

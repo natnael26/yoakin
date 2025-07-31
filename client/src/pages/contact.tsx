@@ -12,6 +12,7 @@ import { insertContactFormSchema } from "@shared/schema";
 import { apiRequest } from "@/lib/queryClient";
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
 import { LoadingDots } from "@/components/loading-spinner";
+import { ContactIllustration } from "@/components/illustrations";
 import { z } from "zod";
 
 const contactFormSchema = insertContactFormSchema.extend({
@@ -76,6 +77,15 @@ export default function Contact() {
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Ready to start your construction project? Contact us today for a free consultation and quote
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Illustration Section */}
+      <section className="py-12 bg-[var(--ethiopia-beige)]">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="bg-gradient-to-br from-white to-[var(--ethiopia-beige)] p-8 rounded-xl shadow-lg">
+            <ContactIllustration />
           </div>
         </div>
       </section>
@@ -269,6 +279,45 @@ export default function Contact() {
                   </Button>
                 </form>
               </Form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Additional Contact Methods */}
+      <section className="py-16 bg-[var(--ethiopia-beige)]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h3 className="text-3xl font-bold text-gray-900 mb-4">More Ways to Reach Us</h3>
+            <p className="text-lg text-gray-600">Choose the method that works best for you</p>
+          </div>
+          
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="text-center bg-white p-6 rounded-xl shadow-lg animate-fade-in-up hover-lift">
+              <div className="w-16 h-16 bg-[var(--ethiopia-brown)] text-white rounded-full flex items-center justify-center mx-auto mb-4">
+                <Phone className="h-8 w-8" />
+              </div>
+              <h4 className="text-xl font-bold text-gray-900 mb-2">Call Us</h4>
+              <p className="text-gray-600 mb-4">Speak directly with our team</p>
+              <p className="text-[var(--ethiopia-brown)] font-semibold">+251 11 XXX XXXX</p>
+            </div>
+            
+            <div className="text-center bg-white p-6 rounded-xl shadow-lg animate-fade-in-up delay-200 hover-lift">
+              <div className="w-16 h-16 bg-[var(--ethiopia-brown)] text-white rounded-full flex items-center justify-center mx-auto mb-4">
+                <Mail className="h-8 w-8" />
+              </div>
+              <h4 className="text-xl font-bold text-gray-900 mb-2">Email Us</h4>
+              <p className="text-gray-600 mb-4">Send us detailed information</p>
+              <p className="text-[var(--ethiopia-brown)] font-semibold">info@habeshaconstruction.com</p>
+            </div>
+            
+            <div className="text-center bg-white p-6 rounded-xl shadow-lg animate-fade-in-up delay-400 hover-lift">
+              <div className="w-16 h-16 bg-[var(--ethiopia-brown)] text-white rounded-full flex items-center justify-center mx-auto mb-4">
+                <MapPin className="h-8 w-8" />
+              </div>
+              <h4 className="text-xl font-bold text-gray-900 mb-2">Visit Our Office</h4>
+              <p className="text-gray-600 mb-4">Meet us in person</p>
+              <p className="text-[var(--ethiopia-brown)] font-semibold">Bole Road, Addis Ababa</p>
             </div>
           </div>
         </div>

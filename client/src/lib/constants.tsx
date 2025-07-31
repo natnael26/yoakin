@@ -124,3 +124,66 @@ export const STATS = [
   { label: "Happy Clients", value: "150+" },
   { label: "Team Members", value: "50+" }
 ];
+
+export const TEAM_MEMBERS = [
+  {
+    id: 1,
+    name: "Alemayehu Tadesse",
+    position: "CEO & Founder",
+    description: "With over 25 years in construction, Alemayehu founded Habesha Construction to bring world-class building standards to Ethiopia.",
+    education: "Civil Engineering, Addis Ababa University",
+    experience: "25+ years",
+    specialties: ["Project Management", "Strategic Planning", "Client Relations"],
+    image: "founder"
+  },
+  {
+    id: 2,
+    name: "Meron Bekele",
+    position: "Chief Engineer",
+    description: "Leading our engineering team with expertise in structural design and innovative construction techniques.",
+    education: "Structural Engineering, Bahir Dar University",
+    experience: "15+ years",
+    specialties: ["Structural Design", "Quality Control", "Safety Management"],
+    image: "engineer"
+  },
+  {
+    id: 3,
+    name: "Dawit Haile",
+    position: "Project Manager",
+    description: "Ensures every project is delivered on time and within budget while maintaining our high-quality standards.",
+    education: "Construction Management, Jimma University",
+    experience: "12+ years",
+    specialties: ["Project Planning", "Resource Management", "Team Leadership"],
+    image: "manager"
+  },
+  {
+    id: 4,
+    name: "Hanan Mohammed",
+    position: "Architect",
+    description: "Creates innovative designs that blend modern functionality with Ethiopian architectural heritage.",
+    education: "Architecture, Ethiopian Institute of Technology",
+    experience: "10+ years",
+    specialties: ["Architectural Design", "Urban Planning", "Sustainable Design"],
+    image: "architect"
+  },
+  {
+    id: 5,
+    name: "Tekle Yohannes",
+    position: "Site Supervisor",
+    description: "Oversees on-site operations ensuring safety protocols and quality standards are maintained at all times.",
+    education: "Construction Technology, Technical Institute",
+    experience: "18+ years",
+    specialties: ["Site Management", "Safety Protocols", "Quality Assurance"],
+    image: "supervisor"
+  },
+  {
+    id: 6,
+    name: "Rahel Girma",
+    position: "Finance Manager",
+    description: "Manages project finances and ensures transparent budgeting for all our construction projects.",
+    education: "Finance & Accounting, Commercial College",
+    experience: "8+ years",
+    specialties: ["Financial Planning", "Budget Management", "Cost Analysis"],
+    image: "finance"
+  }
+];

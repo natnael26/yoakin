@@ -155,3 +155,105 @@ export function ProcessIllustration() {
     </svg>
   );
 }
+
+// Human figure illustrations for team members
+export function TeamMemberIllustration({ type = "default" }: { type?: string }) {
+  const getColors = () => {
+    switch (type) {
+      case "founder":
+        return { skin: "#D4A574", shirt: "var(--ethiopia-brown)", helmet: "var(--ethiopia-gold)" };
+      case "engineer":
+        return { skin: "#8B4513", shirt: "#3b82f6", helmet: "#ffffff" };
+      case "manager":
+        return { skin: "#C19A6B", shirt: "var(--ethiopia-chocolate)", helmet: "var(--ethiopia-gold)" };
+      case "architect":
+        return { skin: "#D2B48C", shirt: "#10b981", helmet: "#ffffff" };
+      case "supervisor":
+        return { skin: "#A0522D", shirt: "#ef4444", helmet: "var(--ethiopia-gold)" };
+      case "finance":
+        return { skin: "#DEB887", shirt: "#8b5cf6", helmet: "#ffffff" };
+      default:
+        return { skin: "#D4A574", shirt: "var(--ethiopia-brown)", helmet: "var(--ethiopia-gold)" };
+    }
+  };
+
+  const colors = getColors();
+
+  return (
+    <svg
+      viewBox="0 0 100 120"
+      className="w-full h-auto animate-float"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      {/* Head */}
+      <circle cx="50" cy="25" r="12" fill={colors.skin} />
+      
+      {/* Body */}
+      <rect x="42" y="35" width="16" height="25" fill={colors.shirt} rx="3" />
+      
+      {/* Arms */}
+      <rect x="35" y="40" width="6" height="15" fill={colors.shirt} rx="3" />
+      <rect x="59" y="40" width="6" height="15" fill={colors.shirt} rx="3" />
+      
+      {/* Legs */}
+      <rect x="44" y="60" width="5" height="20" fill="#2c3e50" rx="2" />
+      <rect x="51" y="60" width="5" height="20" fill="#2c3e50" rx="2" />
+      
+      {/* Safety helmet */}
+      <ellipse cx="50" cy="20" rx="14" ry="8" fill={colors.helmet} />
+      <ellipse cx="50" cy="18" rx="12" ry="6" fill="#ffffff" opacity="0.3" />
+      
+      {/* Tools/Badge */}
+      <rect x="46" y="42" width="8" height="4" fill="var(--ethiopia-gold)" rx="1" />
+    </svg>
+  );
+}
+
+export function ContactIllustration() {
+  return (
+    <svg
+      viewBox="0 0 300 200"
+      className="w-full h-auto animate-bounce-slow"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      {/* Office building */}
+      <rect x="50" y="80" width="80" height="100" fill="var(--ethiopia-brown)" rx="5" />
+      
+      {/* Windows */}
+      <rect x="60" y="100" width="12" height="12" fill="#ffffff" />
+      <rect x="78" y="100" width="12" height="12" fill="#ffffff" />
+      <rect x="96" y="100" width="12" height="12" fill="#ffffff" />
+      <rect x="114" y="100" width="12" height="12" fill="#ffffff" />
+      
+      <rect x="60" y="120" width="12" height="12" fill="#ffffff" />
+      <rect x="78" y="120" width="12" height="12" fill="#ffffff" />
+      <rect x="96" y="120" width="12" height="12" fill="#ffffff" />
+      <rect x="114" y="120" width="12" height="12" fill="#ffffff" />
+      
+      {/* Door */}
+      <rect x="85" y="150" width="15" height="30" fill="var(--ethiopia-chocolate)" rx="2" />
+      
+      {/* People approaching */}
+      <g className="animate-slide-right">
+        <circle cx="180" cy="140" r="8" fill="#D4A574" />
+        <rect x="176" y="148" width="8" height="15" fill="#3b82f6" />
+        <rect x="174" y="163" width="4" height="12" fill="#2c3e50" />
+        <rect x="180" y="163" width="4" height="12" fill="#2c3e50" />
+      </g>
+      
+      <g className="animate-slide-right delay-200">
+        <circle cx="210" cy="145" r="8" fill="#8B4513" />
+        <rect x="206" y="153" width="8" height="15" fill="var(--ethiopia-brown)" />
+        <rect x="204" y="168" width="4" height="12" fill="#2c3e50" />
+        <rect x="210" y="168" width="4" height="12" fill="#2c3e50" />
+      </g>
+      
+      {/* Communication symbols */}
+      <circle cx="200" cy="50" r="20" fill="var(--ethiopia-gold)" opacity="0.3" className="animate-pulse" />
+      <circle cx="200" cy="50" r="15" fill="var(--ethiopia-gold)" opacity="0.5" className="animate-pulse delay-200" />
+      <circle cx="200" cy="50" r="8" fill="var(--ethiopia-gold)" className="animate-pulse delay-400" />
+    </svg>
+  );
+}

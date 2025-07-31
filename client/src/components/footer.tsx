@@ -45,7 +45,7 @@ export function Footer() {
             <h3 className="text-lg font-semibold mb-4">Company</h3>
             <ul className="space-y-2 text-gray-400">
               <li><Link href="/about" className="hover:text-[var(--ethiopia-gold)] transition duration-300">About Us</Link></li>
-              <li><a href="#" className="hover:text-[var(--ethiopia-gold)] transition duration-300">Our Team</a></li>
+              <li><Link href="/team" className="hover:text-[var(--ethiopia-gold)] transition duration-300">Our Team</Link></li>
               <li><a href="#" className="hover:text-[var(--ethiopia-gold)] transition duration-300">Careers</a></li>
               <li><a href="#" className="hover:text-[var(--ethiopia-gold)] transition duration-300">News & Updates</a></li>
               <li><Link href="/contact" className="hover:text-[var(--ethiopia-gold)] transition duration-300">Contact</Link></li>
