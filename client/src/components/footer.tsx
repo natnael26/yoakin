@@ -1,6 +1,6 @@
 import { Building } from "lucide-react";
 import { Link } from "wouter";
-
+import logo from "/logo_bg_2.png";
 export function Footer() {
   return (
     <footer className="bg-gray-900 text-white py-12">
@@ -8,11 +8,16 @@ export function Footer() {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
             <div className="text-2xl font-bold mb-4 text-[var(--ethiopia-gold)] flex items-center">
-              <Building className="h-8 w-8 mr-2" />
-              Habesha Construction
+            <img
+              src={logo}
+              alt="Logo"
+              className="h-20 w-20 mr-2"
+            />
+             
+               Yoakin Construction
             </div>
             <p className="text-gray-400 mb-4">
-              Building Ethiopia's future with excellence, integrity, and innovation for over 20 years.
+              Building Ethiopia's future with excellence, integrity, and innovation for over 10 years.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-400 hover:text-[var(--ethiopia-gold)] transition duration-300">
@@ -47,7 +52,7 @@ export function Footer() {
               <li><Link href="/about" className="hover:text-[var(--ethiopia-gold)] transition duration-300">About Us</Link></li>
               <li><Link href="/team" className="hover:text-[var(--ethiopia-gold)] transition duration-300">Our Team</Link></li>
               <li><a href="#" className="hover:text-[var(--ethiopia-gold)] transition duration-300">Careers</a></li>
-              <li><a href="#" className="hover:text-[var(--ethiopia-gold)] transition duration-300">News & Updates</a></li>
+       
               <li><Link href="/contact" className="hover:text-[var(--ethiopia-gold)] transition duration-300">Contact</Link></li>
             </ul>
           </div>
@@ -57,22 +62,27 @@ export function Footer() {
             <div className="space-y-2 text-gray-400">
               <p>
                 <i className="fas fa-map-marker-alt mr-2"></i>
-                Bole Road, Addis Ababa, Ethiopia
+                CMC Michael Ethiopain Economic Association, Addis Ababa, Ethiopia
               </p>
               <p>
                 <i className="fas fa-phone mr-2"></i>
-                +251 11 XXX XXXX
+                +251 911 66-02-79
+              </p>
+
+              <p>
+                <i className="fas fa-phone mr-2"></i>
+                +251 977 77-69-01
               </p>
               <p>
                 <i className="fas fa-envelope mr-2"></i>
-                info@habeshaconstruction.com
+                info@Yoakinconstruction.com
               </p>
             </div>
           </div>
         </div>
 
         <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-          <p>&copy; 2024 Habesha Construction. All rights reserved. | Privacy Policy | Terms of Service</p>
+          <p>&copy; 2025 Erapex Technologies. All rights reserved. | Privacy Policy | Terms of Service</p>
         </div>
       </div>
     </footer>

@@ -3,47 +3,87 @@
 export function ConstructionIllustration() {
   return (
     <svg
-      viewBox="0 0 400 300"
-      className="w-full h-auto animate-float"
+      viewBox="0 0 800 500"
+      className="w-full h-auto"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      {/* Background */}
-      <rect width="400" height="300" fill="#f8f9fa" />
+      {/* Sky Background */}
+      <rect width="800" height="500" fill="#E6F0FD" />
       
-      {/* Ground */}
-      <rect x="0" y="220" width="400" height="80" fill="#e9ecef" />
+      {/* Construction Site Ground */}
+      <rect x="0" y="400" width="800" height="100" fill="#D4D4D8" />
+      <path d="M0 400 Q200 390 400 410 Q600 430 800 400" fill="#A1A1AA" />
       
-      {/* Building structure */}
-      <rect x="80" y="120" width="100" height="100" fill="var(--ethiopia-brown)" className="animate-slide-up" />
-      <rect x="200" y="100" width="120" height="120" fill="var(--ethiopia-chocolate)" className="animate-slide-up delay-200" />
+      {/* Main Building Structure (Clear Progress) */}
+      <rect x="150" y="250" width="200" height="150" fill="#FECACA" stroke="#B91C1C" strokeWidth="2" />
+      <rect x="150" y="250" width="200" height="50" fill="#FEE2E2" /> {/* Completed portion */}
       
-      {/* Windows */}
-      <rect x="90" y="140" width="15" height="15" fill="#ffffff" />
-      <rect x="110" y="140" width="15" height="15" fill="#ffffff" />
-      <rect x="150" y="140" width="15" height="15" fill="#ffffff" />
-      <rect x="90" y="170" width="15" height="15" fill="#ffffff" />
-      <rect x="110" y="170" width="15" height="15" fill="#ffffff" />
-      <rect x="150" y="170" width="15" height="15" fill="#ffffff" />
+      {/* Visible Construction Elements */}
+      <g>
+        {/* Steel Beams */}
+        <rect x="160" y="300" width="180" height="10" fill="#6B7280" />
+        <rect x="240" y="200" width="10" height="100" fill="#6B7280" />
+        
+        {/* Crane */}
+        <rect x="500" y="150" width="15" height="250" fill="#4B5563" />
+        <rect x="450" y="150" width="120" height="10" fill="#4B5563" />
+        <rect x="450" y="150" width="30" height="5" fill="#1F2937" /> {/* Counterweight */}
+        <circle cx="570" cy="155" r="8" fill="#F59E0B" /> {/* Cable hook */}
+      </g>
       
-      <rect x="220" y="120" width="20" height="20" fill="#ffffff" />
-      <rect x="250" y="120" width="20" height="20" fill="#ffffff" />
-      <rect x="280" y="120" width="20" height="20" fill="#ffffff" />
-      <rect x="220" y="150" width="20" height="20" fill="#ffffff" />
-      <rect x="250" y="150" width="20" height="20" fill="#ffffff" />
-      <rect x="280" y="150" width="20" height="20" fill="#ffffff" />
+      {/* Construction Vehicles (Clearly Recognizable) */}
+      <g>
+        {/* Excavator */}
+        <rect x="50" y="380" width="80" height="30" fill="#DC2626" rx="3" />
+        <circle cx="70" cy="410" r="15" fill="#1F2937" />
+        <circle cx="110" cy="410" r="15" fill="#1F2937" />
+        <rect x="60" y="370" width="40" height="15" fill="#F59E0B" rx="2" /> {/* Cabin */}
+        <rect x="30" y="375" width="30" height="10" fill="#9CA3AF" transform="rotate(30 30 375)" /> {/* Arm */}
+        
+        {/* Cement Mixer */}
+        <rect x="650" y="380" width="70" height="30" fill="#2563EB" rx="3" />
+        <circle cx="670" cy="410" r="15" fill="#1F2937" />
+        <circle cx="710" cy="410" r="15" fill="#1F2937" />
+        <circle cx="685" cy="390" r="20" fill="#E5E7EB" stroke="#9CA3AF" strokeWidth="2" /> {/* Mixer drum */}
+      </g>
       
-      {/* Crane */}
-      <line x1="40" y1="220" x2="40" y2="60" stroke="var(--ethiopia-gold)" strokeWidth="3" className="animate-pulse" />
-      <line x1="40" y1="60" x2="120" y2="60" stroke="var(--ethiopia-gold)" strokeWidth="3" />
-      <line x1="120" y1="60" x2="100" y2="90" stroke="var(--ethiopia-gold)" strokeWidth="2" />
+      {/* Workers (Clear Silhouettes) */}
+      <g>
+        {/* Worker Operating */}
+        <circle cx="300" cy="370" r="10" fill="#FBBF24" /> {/* Head */}
+        <rect x="295" y="370" width="10" height="20" fill="#3B82F6" /> {/* Body */}
+        <path d="M300 390 L280 410" stroke="#1F2937" strokeWidth="2" /> {/* Legs */}
+        <path d="M300 390 L320 410" stroke="#1F2937" strokeWidth="2" />
+        <path d="M300 380 L270 375" stroke="#1F2937" strokeWidth="2" /> {/* Arms */}
+        
+        {/* Worker with Hardhat */}
+        <circle cx="350" cy="370" r="10" fill="#FBBF24" />
+        <path d="M340 365 L360 365 L355 375 L345 375 Z" fill="#F59E0B" /> {/* Hardhat */}
+        <rect x="345" y="370" width="10" height="20" fill="#EF4444" />
+      </g>
       
-      {/* Construction workers (simplified) */}
-      <circle cx="300" cy="210" r="8" fill="#fbbf24" />
-      <rect x="296" y="210" width="8" height="15" fill="#3b82f6" />
+      {/* Construction Materials */}
+      <g>
+        <rect x="200" y="420" width="30" height="15" fill="#A8A29E" rx="2" /> {/* Cement bag */}
+        <rect x="250" y="420" width="40" height="20" fill="#57534E" rx="2" /> {/* Steel pile */}
+        <rect x="550" y="420" width="50" height="10" fill="#78716C" /> {/* Wood planks */}
+      </g>
       
-      <circle cx="350" cy="210" r="8" fill="#fbbf24" />
-      <rect x="346" y="210" width="8" height="15" fill="#ef4444" />
+      {/* Progress Indicators */}
+      <rect x="100" y="230" width="600" height="10" fill="#E5E7EB" rx="5" />
+      <rect x="100" y="230" width="300" height="10" fill="#10B981" rx="5" /> {/* Progress bar */}
+      <text x="400" y="225" fill="#1F2937" textAnchor="middle" fontSize="14" fontWeight="bold">
+        CONSTRUCTION PROGRESS: 50%
+      </text>
+      
+      {/* Company Identification */}
+      <text x="400" y="50" fill="#1E40AF" textAnchor="middle" fontSize="24" fontWeight="bold">
+      Building the Future
+      </text>
+      <text x="400" y="80" fill="#4B5563" textAnchor="middle" fontSize="14">
+       
+      </text>
     </svg>
   );
 }

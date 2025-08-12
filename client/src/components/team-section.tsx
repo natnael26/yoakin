@@ -39,10 +39,7 @@ export function TeamSection() {
                 </p>
 
                 <div className="space-y-3 mb-4">
-                  <div>
-                    <h4 className="text-sm font-semibold text-gray-900 mb-1">Education</h4>
-                    <p className="text-xs text-gray-600">{member.education}</p>
-                  </div>
+                 
                   
                   <div>
                     <h4 className="text-sm font-semibold text-gray-900 mb-1">Experience</h4>

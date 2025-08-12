@@ -97,24 +97,24 @@ export const PORTFOLIO_ITEMS = [
 export const TESTIMONIALS = [
   {
     id: 1,
-    name: "Alemayehu Mekonen",
-    position: "CEO, Tech Solutions Ethiopia",
-    text: "Habesha Construction exceeded our expectations in every way. Their attention to detail and commitment to quality is outstanding. Our office building was completed on time and within budget.",
-    initials: "AM"
+    name: "wobekir bahir yimam ",
+    position: "CEO, TEDAT Construction Ethiopia",
+    text: "Yoakin Construction exceeded our expectations in every way. Their attention to detail and commitment to quality is outstanding. Our office building was completed on time and within budget.",
+    initials: "TEDAT"
   },
   {
     id: 2,
-    name: "Sara Tesfaye",
-    position: "Homeowner, Addis Ababa",
-    text: "The team at Habesha Construction transformed our vision into reality. Their professionalism and expertise in residential construction is unmatched in Ethiopia.",
-    initials: "ST"
+    name: "Kebede Teshome",
+    position: "Operational CEO AYAT share company",
+    text: "The team at Yoakin Construction transformed our vision into reality. Their professionalism and expertise in residential construction is unmatched in Ethiopia.",
+    initials: "AYAT"
   },
   {
     id: 3,
-    name: "Daniel Gebru",
-    position: "Project Manager, Ministry of Transport",
-    text: "Working with Habesha Construction on our infrastructure project was seamless. Their project management skills and technical expertise are world-class.",
-    initials: "DG"
+    name: "Yoseph Kassaye",
+    position: "Cheif Operations Officer,RAMA construction",
+    text: "Working with Yoakin Construction on our infrastructure project was seamless. Their project management skills and technical expertise are world-class.",
+    initials: "RAMA"
   }
 ];
 
@@ -128,7 +128,7 @@ export const STATS = [
 export const TEAM_MEMBERS = [
   {
     id: 1,
-    name: "Alemayehu Tadesse",
+    name: "AKlileBirhan Ababu",
     position: "CEO & Founder",
     description: "With over 25 years in construction, Alemayehu founded Habesha Construction to bring world-class building standards to Ethiopia.",
     education: "Civil Engineering, Addis Ababa University",
@@ -138,8 +138,8 @@ export const TEAM_MEMBERS = [
   },
   {
     id: 2,
-    name: "Meron Bekele",
-    position: "Chief Engineer",
+    name: "Bereket Ababu",
+    position: "Deputy Manager",
     description: "Leading our engineering team with expertise in structural design and innovative construction techniques.",
     education: "Structural Engineering, Bahir Dar University",
     experience: "15+ years",
@@ -148,42 +148,13 @@ export const TEAM_MEMBERS = [
   },
   {
     id: 3,
-    name: "Dawit Haile",
+    name: "Aysheshum",
     position: "Project Manager",
     description: "Ensures every project is delivered on time and within budget while maintaining our high-quality standards.",
     education: "Construction Management, Jimma University",
     experience: "12+ years",
     specialties: ["Project Planning", "Resource Management", "Team Leadership"],
     image: "manager"
-  },
-  {
-    id: 4,
-    name: "Hanan Mohammed",
-    position: "Architect",
-    description: "Creates innovative designs that blend modern functionality with Ethiopian architectural heritage.",
-    education: "Architecture, Ethiopian Institute of Technology",
-    experience: "10+ years",
-    specialties: ["Architectural Design", "Urban Planning", "Sustainable Design"],
-    image: "architect"
-  },
-  {
-    id: 5,
-    name: "Tekle Yohannes",
-    position: "Site Supervisor",
-    description: "Oversees on-site operations ensuring safety protocols and quality standards are maintained at all times.",
-    education: "Construction Technology, Technical Institute",
-    experience: "18+ years",
-    specialties: ["Site Management", "Safety Protocols", "Quality Assurance"],
-    image: "supervisor"
-  },
-  {
-    id: 6,
-    name: "Rahel Girma",
-    position: "Finance Manager",
-    description: "Manages project finances and ensures transparent budgeting for all our construction projects.",
-    education: "Finance & Accounting, Commercial College",
-    experience: "8+ years",
-    specialties: ["Financial Planning", "Budget Management", "Cost Analysis"],
-    image: "finance"
   }
+  
 ];
